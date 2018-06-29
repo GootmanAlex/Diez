@@ -301,4 +301,11 @@ p{
 
 }
 
+hr {
+    border: none;
+    background-color: #eec643;
+    color: #eec643; 
+    height: 2px; 
+   }
+
 /* СЕКЦИЯ advantages--------------------КОНЕЦ!----------------------->>>>>>Т */
