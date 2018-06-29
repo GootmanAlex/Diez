@@ -1,0 +1,304 @@
+/* Шрифты, Текс, размеры, НАЧАЛО----------------------------------->>>>>>Текст, размеры, */
+
+@font-face {
+	font-family: "PT Sans";
+	src:url("..//fonts/PT_Sans/PT_Sans-Web-Regular.ttf");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "PT Sans";
+	src:url("..//fonts/PT_Sans/PT_Sans-Web-Bold.ttf");
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "Prata Sans";
+	src:url("..//fonts/Prata/Prata-Regular.ttf");
+	font-style: normal;
+	font-weight: 400;
+}
+
+h1 {
+	font-family: 'Prata Sans',
+	sans-serif;
+	font-style:normal;
+	font-weight: 400;
+	font-size: 55px;
+	line-height: 55px;
+}
+
+h2{
+	font-family: 'Prata Sans',
+	sans-serif;
+	font-style:normal;
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 50px;
+}
+
+h3{
+	font-family: 'PT Sans',
+	sans-serif;
+	font-style:normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 40px;
+}
+
+.promo__card-title,
+.advantages__fixed-card-title
+.location__fixed-card-title {
+	line-height: 0px ;
+}
+
+p, .form-control, span{
+	font-family: 'PT Sans',
+	sans-serif;
+	font-style:normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+span{
+	font-weight: 700;
+}
+
+.fixed-header__logo,
+.fpage-footer__logo {
+	font-family: 'Prata Sans',
+	sans-serif;
+	font-style:normal;
+	font-weight: 400;
+	font-size: 30px;
+}
+
+.header-menu{
+	font-family: 'PT Sans',
+	sans-serif;
+	font-style:normal;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.fixed-header-card__botton,
+.advantages__fixed-card-botton,
+.location__fixed-card-botton {
+	font-family: 'PT Sans',
+	sans-serif;
+	font-style:normal;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.activity__block-two-title,
+.activity__block-two-text{
+	font-family: 'PT Sans',
+	sans-serif;
+	font-style:normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 0px;
+}
+
+.activity__block-two-title{
+	font-weight: 700;
+}
+
+.footer-menu__item{
+	font-family: 'PT Sans',
+	sans-serif;
+	font-style:normal;
+	font-weight: 400;
+	font-size: 12px;
+}
+
+/* Шрифты, Текс, размеры, КОНЕЦ----------------------------------->>>>>>Текст, размеры, */
+
+img {
+ max-width: 100%;
+ height: auto;
+ width: auto\9; /* ie8 */
+}
+
+.wrapper {
+	background-image: url(../img/bg_main.jpg);
+	background-repeat: no-repeat;
+	width: 1280px;
+	height: 768px;
+	margin: 0 auto;
+	background-position: 0px 0px
+}
+
+
+
+
+
+
+/* СЕКЦИЯ PROMO--------------------НАЧАЛО----------------------->>>>>>Т */
+
+.promo__inner {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.promo__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  height: 100%;
+}
+
+.promo__col {
+  padding: 0 15px;
+  padding-bottom: 25px ;
+  box-sizing: border-box;
+}
+
+.card {
+  color: #fff;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.one-card{
+	background-image: url(../img/directions_card_img_1.jpg);
+	background-repeat: no-repeat;
+	width: 470px;
+	height: 269px;
+}
+
+.two-card{
+	background-image: url(../img/directions_card_img_3.jpg);
+	background-repeat: no-repeat;
+	width: 570px;
+	height: 269px;
+}
+
+.three-card{
+	background-image: url(../img/directions_card_img_2.jpg);
+	background-repeat: no-repeat;
+	width: 470px;
+	height: 269px;
+}
+
+.four-card{
+	background-image: url(../img/directions_card_img_4.jpg);
+	background-repeat: no-repeat;
+	width: 270px;
+	height: 269px;
+}
+
+.five-card{
+	background-color: #eec643;
+	width: 270px;
+	height: 269px;
+}
+
+@media (min-width: 500px) {
+  
+  
+  .promo__item-title{
+  transform: rotate(-90deg);
+  margin-top:200px ;
+  max-width:100% ;
+
+}
+  
+   .promo__col--2 {
+    flex-basis: 20%;
+    max-width: 20%;
+  }
+  
+  .promo__col--5 {
+    flex-basis: 66%;
+    max-width: 67%;
+  }
+  
+  .promo__col--6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  
+  .promo__col--12 {
+    flex-basis: 66%;
+    max-width: 67%;
+  }
+  
+  .card {
+    margin: 0;
+    height: 100%;
+  }
+  
+.arent-one{
+	height: 294px;
+}
+
+.arent-two{
+        margin-left: 170px;
+        height: 55%;
+  }
+
+.arent-three{
+
+}
+
+.arent-four{
+
+}
+
+
+
+
+}
+
+
+/* СЕКЦИЯ PROMO--------------------КОНЕЦ----------------------->>>>>>Т */
+
+
+/* СЕКЦИЯ advantages--------------------НАЧАЛО----------------------->>>>>>Т */
+
+
+
+
+
+@media (max-width: 500px) {
+
+h1{
+	font-size: 32px;
+    line-height: 42px;
+}	
+	
+h2{
+	font-size: 30px;
+    line-height: 33px;
+}
+
+.activity__item-title{
+	line-height: 30px
+}	
+
+h3{
+	font-size: 18px;
+   
+}
+ 
+p{
+	font-size: 16px;
+    line-height: 22px;
+}
+
+.promo__card-directions,
+.advantages__fixed-card-title{
+	font-size: 16px;
+}
+
+}
+
+/* СЕКЦИЯ advantages--------------------КОНЕЦ!----------------------->>>>>>Т */
