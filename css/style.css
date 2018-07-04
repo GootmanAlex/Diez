@@ -1,0 +1,1273 @@
+/* Шрифты, Текс, размеры, НАЧАЛО----------------------------------->>>>>>Текст, размеры, */
+
+@font-face {
+	font-family: "PT Sans";
+	src: url("..//fonts/PT_Sans/PT_Sans-Web-Regular.ttf");
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: "PT Sans";
+	src: url("..//fonts/PT_Sans/PT_Sans-Web-Bold.ttf");
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Prata Sans";
+	src: url("..//fonts/Prata/Prata-Regular.ttf");
+	font-style: normal;
+	font-weight: 400;
+}
+.container {
+	width: 100%;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+.wrapper {
+		background-image:url(../img/bg_main-mob.jpg);
+		background-repeat:no-repeat;
+		/*width: 1280px;*/
+		height:535px;
+		width: 320px;
+		background-size:cover;
+		background-position:center;
+	}
+
+h1 {
+	font-family: 'Prata Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 42px;
+	color: white;
+}
+
+h2 {
+	font-family: 'Prata Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 30px;
+	color: white;
+}
+
+h3 {
+	font-family: 'PT Sans', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+p,
+.advantages__fixed-card-title .location__fixed-card-title, #create-user {
+	font-family: 'PT Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;	
+	color: white;
+}
+
+.fixed-header__logo{
+	font-family: 'Prata Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	color: #eec643;
+}
+.logo{
+	text-decoration: none;
+	color: #eec643;
+
+}
+.fixed-header-item__title{
+	display: none;
+}
+
+.fixed-header__navigation{
+	display: none;
+}
+
+.fixed-header-item__content{
+	display: none;
+}
+
+.fixed-header-card{
+	display: none;
+}
+
+
+ label, input {
+  display:block; 
+}
+
+ input.text {
+  margin-bottom:12px; width:95%; padding: .4em;
+  }
+
+ fieldset {
+  padding:0; border:0; margin-top:25px; 
+}
+
+ div#users-contain {
+  width: 100%; margin: 20px 0; 
+}
+
+ div#users-contain table {
+  margin: 1em 0; border-collapse: collapse; width: 100%; 
+}
+
+div#users-contain table td, div#users-contain table th {
+ border: 1px solid #eee; padding: .6em 10px; text-align: left;
+ }
+
+ .ui-dialog .ui-state-error {
+  padding: .3em; 
+}
+
+ .validateTips {
+  border: 1px solid transparent; padding: 0.3em; 
+}
+
+.dialog{
+	width: 100%;
+}
+
+
+.fixed-header-item__title-mob{
+	padding-top: 64px;
+    padding-left: 16px;
+}
+
+.fixed-header-item__content-mob{
+	padding-left: 16px;
+    margin-top: -17px;
+}
+
+#create-user{
+ width: 288px;
+ height: 60px;
+ background: #eec643;
+ text-shadow: none;
+ box-shadow: none;
+ border: 1px solid rgb(238,198,67);
+ color: #f9fcfc;
+ position: absolute;
+ left: 16px;
+ bottom: -119px;
+}
+
+.fixed-header__container{
+	padding-top: 21px;
+	padding-left: 15px;
+}
+
+/*-----------------Promo------------------*/
+
+
+.promo {
+	width: 100%;
+}
+.promo__row {
+		display:flex;
+		flex-wrap:wrap;
+		margin-left:-15px;
+		margin-right:-15px;
+		/*height: 1170px;*/
+	}
+
+	.promo__item-title{
+		color: black;
+	}
+	.promo__col {
+		padding:0 11px;
+		box-sizing:border-box;
+	}
+	.card {
+		color:#fff;
+		padding:5px;
+		box-sizing:border-box;
+		margin-bottom:30px;
+	}
+	.one-card {
+		background-image:url(../img/directions_card_img_11.jpg);
+		background-repeat:no-repeat;
+		width:288px;
+		height:144px;
+	}
+	.two-card {
+		background-image:url(../img/directions_card_img_33.jpg);
+		background-repeat:no-repeat;
+		width:288px;
+		height:144px;
+	}
+	.three-card {
+		background-image:url(../img/directions_card_img_22.jpg);
+		background-repeat:no-repeat;
+		width:288px;
+		height:144px;
+	}
+
+	.five-card {
+		background-color:#eec643;
+		width:270px;
+		height:269px;
+	}
+	.arent-four{
+	display: none;
+	}
+
+.promo__card_text, span, .promo__desk-four{
+	display: none;
+}
+
+.promo__desk-three{
+	padding: 0;
+	width: 235px;
+    height: 144px;
+}
+
+.promo__desk-five{
+	transform: rotate(-90deg);
+    width: 69px;
+    height: 135px;
+}
+
+.decrease{
+	width: 144px;
+    height: 60px;
+    margin: 26px 0px 0px -53px;
+}
+
+.promo__item-title{
+	margin: 0;
+    padding-left: 19px;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    margin-top: 24px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    border-color: #eec643;
+}
+	
+.promo__desk-one{
+	padding-top: 11px;
+    padding-left: 20px;
+}	
+
+.promo__card-title{
+	margin: 0;
+    padding-top: 22px;
+    padding-left: 5px;
+}
+
+.promo__card_text-mob{
+	margin: 0px;
+    padding-left: 5px;
+}
+
+.promo__desk-two{
+	padding-top: 16px;
+    padding-left: 20px;
+}
+
+.promo__card-guitar{
+	margin: 0px;
+    padding-top: 23px;
+    padding-left: 5px;
+}
+
+.three-card{
+	margin: 0;
+}
+.one-card{
+	margin: 0;
+}
+
+.promo__row-mus{
+	display: flex;
+	flex-basis:auto;
+	padding-top: 16px;
+    padding-left: 20px;
+}
+
+.promo__card-directions{
+	margin: 0;
+	padding-left: 9px;
+    padding-top: 6px;
+	color: black;
+	font-weight: 400;
+	font-size: 16px;
+}
+/*-----------------Promo-----КОНЕЦ-------------*/
+
+
+/*-----------------Advantages-----Начало---------*/
+
+.advantages {
+	width: 100%;
+}
+.advantages__row {
+		display:flex;
+		flex-wrap:wrap;
+		margin-left:-15px;
+		margin-right:-15px;
+		/*height: 1170px;*/
+	}
+
+.advantages__item-title{
+	color: black;
+    margin: 0;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin-top: 24px;
+    padding-bottom: 2px;
+    padding-top: 6px;
+    border-color: #eec643;
+    margin-left: 57px;
+    margin-top: 32px;
+}
+
+.advan-one-card {
+	background-image:url(../img/advantages_card_img_11.jpg);
+	background-repeat:no-repeat;
+	width:288px;
+	height:144px;
+	margin: 0;
+	margin-left: 46px;
+    margin-top: 16px;
+}
+
+.advan-two-card {
+	background-image:url(../img/advantages_card_img_22.jpg);
+	background-repeat:no-repeat;
+	width:288px;
+	height:144px;
+	margin: 0;
+	margin-left: 46px;
+    margin-top: 16px;
+}
+
+.advan-three-card {
+	background-image:url(../img/advantages_card_img_33.jpg);
+	background-repeat:no-repeat;
+	width:212px;
+	height:144px;
+	margin: 0;
+	margin-left: 46px;
+    margin-top: 16px;
+}
+
+.advan-four-card {
+	width:270px;
+	height:570px;
+	border:1px solid #eec643;
+}
+
+.advantages__card_text{
+	display: none;
+}
+
+.advantages__des{
+	display: none;
+}
+
+.advantages__card-title{
+	padding-top: 23px;
+    padding-left: 6px;
+    margin: 0;
+}
+
+.advantages__card_text-mob{
+	padding-left: 6px;
+	margin: 0;
+}
+
+.advantages__row-mus{
+	display: flex;
+	flex-basis:auto;
+}
+
+.advantages__desk-one{
+	transform: rotate(-90deg);
+    width: 69px;
+    height: 135px;
+}
+
+.advantages__decrease{
+	width: 144px;
+    height: 60px;
+    margin: 49px 0px 0px -58px;
+}
+
+.advantages__card-directions{
+	margin: 0;
+    padding-left: 8px;
+    padding-top: 7px;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+}
+/*-----------------Advantages-----Конец---------*/
+
+
+/*------------------Activity-------НАЧАЛО-------*/
+
+
+
+.activity__item-title{
+	color: black;
+    margin: 0;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin-top: 24px;
+    padding-bottom: 2px;
+    padding-top: 6px;
+    border-color: #eec643;
+    margin-left: 16px;
+    margin-top: 32px;
+    width: 228px;
+    padding-left: 10px;
+}
+
+.activity__block-one-text-desk {
+	display: none;
+}
+
+.activity__block-one-title, .activity__block-one-text,
+.activity__block-two-title, .activity__block-two-text {
+	text-decoration: none;
+	margin: 0;
+}
+
+.activity__block-one-title{
+	padding-top: 132px;
+    padding-left: 11px;
+}
+
+.activity__block-one-text{
+	padding-left: 11px;
+}
+
+.activity__block-two-title{
+	padding-top: 123px;
+    padding-left: 26px;
+}
+
+.activity__block-two-text{
+		padding-left: 26px;
+}
+
+.activity__video-Yang-Zhuo{
+	text-decoration: none;
+}
+
+.activity__video-winter-cherry{
+	margin: 0;
+	margin-left: 40px;
+    margin-top: 16px;
+
+}
+
+.activity__video-Yang-Zhuo, .activity__video-Summer-calm, .activity__video-Sergey-Trofimov{
+	margin-left: 25px;
+    margin-top: 25px;
+}
+
+
+
+
+/*---------ВИДЕО-------------*/
+
+.activity__video-winter-cherry {
+		background-image:url(../img/video_card_img_11.jpg);
+		background-repeat:no-repeat;
+		width:240px;
+		height:186px;
+		display:block;
+		color:white;
+		text-decoration:none;
+	}
+	.activity__video-Yang-Zhuo {
+		background-image:url(../img/video_card_img_2.jpg);
+		background-repeat:no-repeat;
+		width:270px;
+		height:169px;
+		display:block;
+		color:white;
+		text-decoration:none;
+	}
+	.activity__video-Summer-calm {
+		background-image:url(../img/video_card_img_3.jpg);
+		background-repeat:no-repeat;
+		width:270px;
+		height:169px;
+		display:block;
+		color:white;
+		text-decoration:none;
+	}
+	.activity__video-Sergey-Trofimov {
+		background-image:url(../img/video_card_img_4.jpg);
+		background-repeat:no-repeat;
+		width:270px;
+		height:169px;
+		display:block;
+		color:white;
+		text-decoration:none;
+	}
+
+.slick-arrow{
+	
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	padding: 0;
+	border:0;
+	width: 30px;
+	height: 30px;
+	background: #ff0;
+	background: transparent;
+	font:0/0 a;
+	color: transparent;
+	transform:translateY(-50%);
+
+}
+
+.slick-prev{
+	left: 0;
+}
+
+.slik-next{
+	right: 0;
+}
+
+
+/*---------ВИДЕО---Конец----------*/
+
+/*------------------Activity-------КОНЕЦ--------*/
+
+
+/*------------------Location-------НАЧАЛО--------*/
+
+.location__container {
+	width: 100%;
+}
+
+.location__row {
+	display:flex;
+	flex-wrap:wrap;
+	margin-left:-15px;
+	margin-right:-15px;
+}
+
+.location__item-title{
+	color: black;
+    margin: 0;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin-top: 24px;
+    padding-bottom: 2px;
+    padding-top: 6px;
+    border-color: #eec643;
+    margin-left: 31px;
+    margin-top: 40px;
+    width: 228px;
+    padding-left: 10px;
+}
+
+.location__item-text-desk{
+	display: none;
+}
+
+.location__item-text-mob{
+	color: black;
+	margin-left: 40px;
+    margin-top: 22px;
+}
+
+.location__map{
+	margin-left: 17px;
+}
+
+.location__wrap{
+	display: none;
+}
+
+.location__decrease{
+	width: 288px;
+    height: 60px;
+    margin: 9px 0px 0px 31px;
+}
+
+.location__card-directions{
+	margin: 0;
+    padding-left: 81px;
+    padding-top: 15px;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;	
+}
+    
+.location__beginning, .advantages__beginning{
+	text-decoration: none;
+}
+
+
+.page-footer{
+	display: none;
+}
+/*------------------Location-------КОНЕЦ--------*/
+
+
+
+@media (min-width: 576px) {
+	
+}
+@media (min-width: 1200px) {
+		h1 {
+			font-family: 'Prata Sans', sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 55px;
+			line-height: 55px;
+			color: #f9fcfc;
+		}
+		h2 {
+			font-family: 'Prata Sans', sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 50px;
+			line-height: 50px;
+		}
+		h3 {
+			font-family: 'PT Sans', sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 30px;
+			line-height: 40px;
+		}
+		.promo__card-title,
+		.advantages__fixed-card-title .location__fixed-card-title {
+			line-height: 0px;
+		}
+		p,
+		.form-control,
+		span {
+			font-family: 'PT Sans', sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 28px;
+			color: #f9fcfc;
+		}
+		span {
+			font-weight: 700;
+		}
+		.fixed-header__logo,
+		.fpage-footer__logo {
+			font-family: 'Prata Sans', sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 30px;
+		}
+		.header-menu {
+			font-family: 'PT Sans', sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+		}
+		.fixed-header-card__botton,
+		.advantages__fixed-card-botton,
+		.location__fixed-card-botton {
+			font-family: 'PT Sans', sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 20px;
+		}
+		.activity__block-two-title,
+		.activity__block-two-text {
+			font-family: 'PT Sans', sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 0px;
+		}
+		.activity__block-two-title {
+			font-weight: 700;
+		}
+		.footer-menu__item {
+			font-family: 'PT Sans', sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 12px;
+		}
+
+	/*@media (min-width: 481px) and (max-width: 1280px) {*/
+
+	/*
+	h1 {
+		font-family: 'Prata Sans',
+		sans-serif;
+		font-style:normal;
+		font-weight: 400;
+		font-size: 55px;
+		line-height: 55px;
+	}
+
+	h2{
+		font-family: 'Prata Sans',
+		sans-serif;
+		font-style:normal;
+		font-weight: 400;
+		font-size: 50px;
+		line-height: 50px;
+	}
+
+	h3{
+		font-family: 'PT Sans',
+		sans-serif;
+		font-style:normal;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 40px;
+	}*/
+
+	.promo__card-title,
+	.advantages__fixed-card-title .location__fixed-card-title {
+		line-height: 0px;
+	}
+	p,
+	.form-control,
+	span {
+		font-family: 'PT Sans', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 28px;
+	}
+	span {
+		font-weight: 700;
+	}
+	.fixed-header__logo,
+	.fpage-footer__logo {
+		font-family: 'Prata Sans', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 30px;
+	}
+	.header-menu {
+		font-family: 'PT Sans', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+	}
+	.fixed-header-card__botton,
+	.advantages__fixed-card-botton,
+	.location__fixed-card-botton {
+		font-family: 'PT Sans', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+	}
+	.activity__block-two-title,
+	.activity__block-two-text {
+		font-family: 'PT Sans', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 0px;
+	}
+	.activity__block-two-title {
+		font-weight: 700;
+	}
+	.footer-menu__item {
+		font-family: 'PT Sans', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+	}
+
+	/*@media (min-width: 320px) and (max-width: 480px) {*/
+
+
+
+	/* Шрифты, Текс, размеры, КОНЕЦ----------------------------------->>>>>>Текст, размеры, */
+
+	/* СЕКЦИЯ fixed-header--------------------НАЧАЛО----------------------->>>>>>Т */
+
+	img {
+		max-width:100%;
+		height:auto;
+		width:auto\9;
+		/* ie8 */
+	}
+	
+	/*@media (min-width: 1200px) {*/
+
+
+	.logo {
+		color:#e0bb40;
+		list-style:none;
+		text-decoration:none;
+		position:absolute;
+		padding-top:31px;
+		padding-left:52px;
+	}
+	.header-menu__item {
+		color:#021a23;
+		list-style:none;
+		text-decoration:none;
+		padding:0px 20px;
+	}
+	.header-menu {
+		display:flex;
+		justify-content:flex-end;
+		padding-right:32px;
+		padding-top:46px;
+	}
+	.fixed-header-item {
+		/*padding-left: 57px;*/
+		width:75%;
+	}
+	h1 {
+		/*padding-top: 54px;*/
+		margin:0;
+	}
+	.row {
+		display:flex;
+		padding-top:173px;
+		/*width: 1170px;*/
+		margin:0 auto;
+	}
+	.fixed-header-card {
+		width:25%;
+		/*position: absolute;*/
+		/*bottom: -6.3%;*/
+		/*right: 12.45%;*/
+		border:2px solid #021a23;
+		border-color:rgb(2,
+		26,
+		35);
+		border-style:solid;
+		background-color:rgba(255,
+		255,
+		255,
+		0.851);
+	}
+	.fixed-header-card__title {
+		padding-left:32px;
+	}
+	.fixed-header-card__title {
+		padding-left:0px;
+		padding-top:0px;
+		margin:0;
+	}
+	.fixed-header-card {
+		width:266px;
+		height:416px;
+	}
+	.fixed-header-card__item {
+		padding-left:28px;
+	}
+	.fixed-header-card__text {
+		margin:0;
+		padding-top:11px;
+		color:#596063;
+	}
+	.fixed-header-card__input-block {
+		padding-top:42px;
+		padding-left:26px;
+	}
+	input[type='text'] input[type='phone'] {
+		border:none;
+		background-color:transparent;
+	}
+	.wrap {
+		padding-top:12px;
+	}
+	.form-control {
+		border:none;
+		background-color:rgba(255,
+		255,
+		255,
+		-0.149);
+		text-decoration:underline;
+	}
+	#MusicalType,
+	.form-control {
+		color:#596063;
+		text-decoration:none;
+		border-bottom:2px solid #021a23;
+	}
+	#MusicalType {
+		width:220px;
+	}
+	/* СЕКЦИЯ fixed-header--------------------КОНЕЦ----------------------->>>>>>Т */
+
+	/* СЕКЦИЯ PROMO--------------------НАЧАЛО----------------------->>>>>>Т */
+
+	.promo {
+		display:none;
+	}
+	/*@media(min-width: 480px){*/
+
+	.promo {
+		display:block;
+	}
+
+	.promo__inner {
+		/*width: 1280px;*/
+		margin:0 auto;
+	}
+	.promo__row {
+		display:flex;
+		flex-wrap:wrap;
+		margin-left:-15px;
+		margin-right:-15px;
+		/*height: 1170px;*/
+	}
+	.promo__col {
+		padding:0 15px;
+		padding-bottom:25px;
+		box-sizing:border-box;
+	}
+	.card {
+		color:#fff;
+		padding:5px;
+		box-sizing:border-box;
+		margin-bottom:30px;
+	}
+	.one-card {
+		background-image:url(../img/directions_card_img_1.jpg);
+		background-repeat:no-repeat;
+		width:470px;
+		height:269px;
+	}
+	.two-card {
+		background-image:url(../img/directions_card_img_3.jpg);
+		background-repeat:no-repeat;
+		width:570px;
+		height:269px;
+	}
+	.three-card {
+		background-image:url(../img/directions_card_img_2.jpg);
+		background-repeat:no-repeat;
+		width:470px;
+		height:269px;
+	}
+	.four-card {
+		background-image:url(../img/directions_card_img_4.jpg);
+		background-repeat:no-repeat;
+		width:270px;
+		height:269px;
+	}
+	.five-card {
+		background-color:#eec643;
+		width:270px;
+		height:269px;
+	}
+	/*@media (min-width: 500px) {*/
+
+	.promo__item-title {
+		transform:rotate(-90deg);
+		margin-top:200px;
+		max-width:100%;
+	}
+	.promo__col--2 {
+		flex-basis:20%;
+		max-width:20%;
+	}
+	.promo__col--5 {
+		flex-basis:66%;
+		max-width:67%;
+	}
+	.promo__col--6 {
+		flex-basis:50%;
+		max-width:50%;
+	}
+	.promo__col--12 {
+		flex-basis:66%;
+		max-width:67%;
+	}
+	.card {
+		margin:0;
+		height:100%;
+	}
+	.arent-one {
+		height:294px;
+	}
+	.arent-two {
+		margin-left:170px;
+		height:55%;
+	}
+	.arent-three {} .arent-four {}
+
+	/* СЕКЦИЯ PROMO--------------------КОНЕЦ----------------------->>>>>>Т */
+
+	/* СЕКЦИЯ advantages--------------------НАЧАЛО----------------------->>>>>>Т */
+
+	/*@media (min-width: 720px) {*/
+
+	.promo__inner {
+		/*width: 1280px;*/
+		margin:0 auto;
+	}
+
+	/*@media (min-width: 720px) {*/
+
+	.advantages__inner {
+		/*width: 1280px;*/
+		height:720px;
+		margin:0 auto;
+	}
+
+	.advantages__inner {
+		/*width: 1280px;*/
+		margin:0 auto;
+	}
+	.advantages__row {
+		display:flex;
+		flex-wrap:wrap;
+		margin-left:-15px;
+		margin-right:0px;
+		/*width: 1170px;*/
+	}
+	.advantages__col {
+		padding:0 15px;
+		padding-bottom:25px;
+		box-sizing:border-box;
+	}
+	.card {
+		background-color:#eec643;
+		color:#fff;
+		padding:5px;
+		box-sizing:border-box;
+		margin-bottom:30px;
+	}
+	.advan-one-card {
+		background-image:url(../img/advantages_card_img_11.jpg);
+		background-repeat:no-repeat;
+		width:288px;
+		height:144px;
+	}
+	.advan-two-card {
+		background-image:url(../img/advantages_card_img_22.jpg);
+		background-repeat:no-repeat;
+		width:288px;
+		height:144px;
+	}
+	.advan-three-card {
+		background-image:url(../img/advantages_card_img_33.jpg);
+		background-repeat:no-repeat;
+		width:212px;
+		height:144px;
+	}
+	.advan-four-card {
+		width:270px;
+		height:570px;
+		border:1px solid #eec643;
+	}
+	hr {
+		border:none;
+		background-color:#eec643;
+		color:#eec643;
+		height:2px;
+	}
+	.advantages__item-title {
+		padding:0px 25px 0px 25px;
+	}
+	/*@media (min-width: 321px) {*/
+
+	.advan-one-card {
+		background-image:url(../img/advantages_card_img_1.jpg);
+		background-repeat:no-repeat;
+		width:270px;
+		height:468px;
+	}
+	.advan-two-card {
+		background-image:url(../img/advantages_card_img_2.jpg);
+		background-repeat:no-repeat;
+		width:270px;
+		height:468px;
+	}
+	.advan-three-card {
+		background-image:url(../img/advantages_card_img_3.jpg);
+		background-repeat:no-repeat;
+		width:270px;
+		height:570px;
+	}
+	.advan-four-card {
+		width:270px;
+		height:570px;
+		border:1px solid #eec643;
+	}
+	.advantages__col--2 {
+		flex-basis:20%;
+		max-width:20%;
+	}
+	.advantages__col--5 {
+		flex-basis:79%;
+		max-width:79%;
+	}
+	.advantages__col--6 {
+		flex-basis:50%;
+		max-width:50%;
+	}
+	.advantages__col--12 {
+		flex-basis:100%;
+		max-width:100%;
+	}
+	.advan-arent {
+		margin-left:46px;
+	}
+
+	/*@media (min-width: 1200px) {*/
+
+	.advan-one-card {
+		background-image:url(../img/advantages_card_img_1.jpg);
+		background-repeat:no-repeat;
+		width:270px;
+		height:468px;
+	}
+	.advan-two-card {
+		background-image:url(../img/advantages_card_img_2.jpg);
+		background-repeat:no-repeat;
+		width:270px;
+		height:468px;
+	}
+	.advan-three-card {
+		background-image:url(../img/advantages_card_img_3.jpg);
+		background-repeat:no-repeat;
+		width:270px;
+		height:570px;
+	}
+	.advan-four-card {
+		width:270px;
+		height:570px;
+		border:1px solid #eec643;
+		margin-left:65px;
+	}
+	.advantages__inner {
+		/*width: 1280px;*/
+		height:720px;
+		margin:0 auto;
+	}
+	.advantages__col--5 {
+		flex-basis:33%;
+		max-width:35%;
+		height:71%;
+	}
+	.advantages__col--12 {
+		flex-basis:35%;
+		max-width:35%;
+	}
+	.advantages__col--2 {
+		flex-basis:87%;
+		max-width:87%;
+		height:0;
+	}
+	h2 {
+		transform:rotate(0deg);
+		margin-top:29px;
+		max-width:100%;
+	}
+
+	/* СЕКЦИЯ advantages--------------------КОНЕЦ!----------------------->>>>>>Т */
+
+	/* СЕКЦИЯ activity--------------------НАЧАЛО!----------------------->>>>>>Т */
+
+	.activity__container {
+		/*width: 1280px;*/
+		margin:0 auto;
+	}
+	.activity__row {
+		/*width: 1170px;*/
+		margin:0 auto;
+		display:flex;
+	}
+	.activity__video-winter-cherry {
+		background-image:url(../img/video_card_img_1.jpg);
+		background-repeat:no-repeat;
+		width:770px;
+		height:568px;
+		display:block;
+		color:white;
+		text-decoration:none;
+	}
+	.activity__video-Yang-Zhuo {
+		background-image:url(../img/video_card_img_2.jpg);
+		background-repeat:no-repeat;
+		width:270px;
+		height:169px;
+		display:block;
+		color:white;
+		text-decoration:none;
+	}
+	.activity__video-Summer-calm {
+		background-image:url(../img/video_card_img_3.jpg);
+		background-repeat:no-repeat;
+		width:270px;
+		height:169px;
+		display:block;
+		color:white;
+		text-decoration:none;
+	}
+	.activity__video-Sergey-Trofimov {
+		background-image:url(../img/video_card_img_4.jpg);
+		background-repeat:no-repeat;
+		width:270px;
+		height:169px;
+		display:block;
+		color:white;
+		text-decoration:none;
+	}
+
+
+}
+
+
+/* СЕКЦИЯ activity--------------------КОНЕЦ!----------------------->>>>>>Т */
+
+
+*{
+	box-sizing: border-box;
+}
+
+.activity__vid-slider-img {
+	width: 270px;
+	height: 168px;
+	margin-left: 17px;
+}
+
+
+
+.slick-arrow{
+	
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	padding: 0;
+	border:0;
+	width: 30px;
+	height: 30px;
+	background: #ff0;
+	background: transparent;
+	font:0/0 a;
+	color: transparent;
+	transform:translateY(-50%);
+
+}
+
+.slick-prev{
+	left: 0;
+}
+
+.slik-next{
+	right: 0;
+}
+
+#select{
+
+}
