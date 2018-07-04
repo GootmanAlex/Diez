@@ -241,18 +241,21 @@ div#users-contain table td, div#users-contain table th {
 }
 
 .promo__item-title{
-	margin: 0;
-    padding-left: 19px;
-    border-bottom: 2px solid;
-    border-top: 2px solid;
-    margin-top: 24px;
+    color: black;
+    margin: 0;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
     padding-bottom: 4px;
     padding-top: 4px;
     border-color: #eec643;
+    margin-left: 9px;
+    margin-top: 25px;
+    width: 228px;
+    padding-left: 10px;
 }
 	
 .promo__desk-one{
-	padding-top: 11px;
+	padding-top: 12px;
     padding-left: 20px;
 }	
 
