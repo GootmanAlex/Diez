@@ -154,9 +154,8 @@ div#users-contain table td, div#users-contain table th {
  box-shadow: none;
  border: 1px solid rgb(238,198,67);
  color: #f9fcfc;
- position: absolute;
- left: 16px;
- bottom: -119px;
+ margin-left: 16px;
+ margin-top: 68px;
 }
 
 .fixed-header__container{
