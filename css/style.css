@@ -624,16 +624,112 @@ div#users-contain table td, div#users-contain table th {
 
 
 
-@media (min-width: 576px) {
+@media (min-width: 540px) {
+
+
+.wrapper {
+		background-image:url(../img/bg_main.jpg);
+		background-repeat:no-repeat;
+		/*width: 1280px;*/
+		height:100%;
+		width: 100%;
+		background-size:cover;
+		background-position:center;
+	}
+
+	.header-menu__item {
+		color:#021a23;
+		list-style:none;
+		text-decoration:none;
+		padding:0px 20px;
+	}
+	.header-menu {
+		display:flex;
+		justify-content:flex-end;
+		padding-right:32px;
+		padding-top:46px;
+	}
+
+.fixed-header__navigation{
+	display: contents;
+}
+	
+.fixed-header-item__title-mob, .fixed-header-item__content-mob{
+	display: none;
+}
+
+.fixed-header-item__title, .fixed-header-item__content{
+	display: contents;
+}
 	
 }
+
+
 @media (min-width: 1200px) {
+
+.wrapper {
+	background-image:url(../img/bg_main.jpg);
+	background-repeat:no-repeat;
+	/*width: 1280px;*/
+	height:100%;
+	width: 100%;
+	background-size: unset;
+	background-position: unset;
+	}
+
+.row {
+	display:flex;
+	margin:0 auto;
+}
+
+
+.fixed-header__container{
+	padding-top:0px ;
+	padding-left:0px ;
+}
+
+.header-menu {
+		display:flex;
+		justify-content:flex-end;
+		padding-right:0px;
+		padding-top:30px;
+	}
+
+.logo {
+		color:#e0bb40;
+		list-style:none;
+		text-decoration:none;
+		position:absolute;
+		padding-top:31px;
+		padding-left:51px;
+	}
+
+.header-menu__item {
+		color:#021a23;
+		list-style:none;
+		text-decoration:none;
+		padding: 0;
+		padding-left: 30px
+	}
+
+.header-menu__list{
+	margin-right: 45px;
+}
+
+.fixed-header-item {
+	padding-left: 55px;
+    padding-top: 221px;
+	width:75%;
+	}
+
+
+
 		h1 {
 			font-family: 'Prata Sans', sans-serif;
 			font-style: normal;
 			font-weight: 400;
 			font-size: 55px;
-			line-height: 55px;
+			line-height: 35px;
 			color: #f9fcfc;
 		}
 		h2 {
@@ -706,35 +802,6 @@ div#users-contain table td, div#users-contain table th {
 			font-size: 12px;
 		}
 
-	/*@media (min-width: 481px) and (max-width: 1280px) {*/
-
-	/*
-	h1 {
-		font-family: 'Prata Sans',
-		sans-serif;
-		font-style:normal;
-		font-weight: 400;
-		font-size: 55px;
-		line-height: 55px;
-	}
-
-	h2{
-		font-family: 'Prata Sans',
-		sans-serif;
-		font-style:normal;
-		font-weight: 400;
-		font-size: 50px;
-		line-height: 50px;
-	}
-
-	h3{
-		font-family: 'PT Sans',
-		sans-serif;
-		font-style:normal;
-		font-weight: 700;
-		font-size: 30px;
-		line-height: 40px;
-	}*/
 
 	.promo__card-title,
 	.advantages__fixed-card-title .location__fixed-card-title {
@@ -809,40 +876,15 @@ div#users-contain table td, div#users-contain table th {
 	/*@media (min-width: 1200px) {*/
 
 
-	.logo {
-		color:#e0bb40;
-		list-style:none;
-		text-decoration:none;
-		position:absolute;
-		padding-top:31px;
-		padding-left:52px;
-	}
-	.header-menu__item {
-		color:#021a23;
-		list-style:none;
-		text-decoration:none;
-		padding:0px 20px;
-	}
-	.header-menu {
-		display:flex;
-		justify-content:flex-end;
-		padding-right:32px;
-		padding-top:46px;
-	}
-	.fixed-header-item {
-		/*padding-left: 57px;*/
-		width:75%;
-	}
+	
+	
+	
+	
 	h1 {
 		/*padding-top: 54px;*/
 		margin:0;
 	}
-	.row {
-		display:flex;
-		padding-top:173px;
-		/*width: 1170px;*/
-		margin:0 auto;
-	}
+	
 	.fixed-header-card {
 		width:25%;
 		/*position: absolute;*/

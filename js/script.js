@@ -67,7 +67,7 @@
     dialog = $( "#dialog-form" ).dialog({
       autoOpen: false,
       height: 400,
-      width: '100%',
+      width: 320,
       modal: true,
       buttons: {
         "Создать аккаунт": addUser,
