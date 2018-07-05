@@ -90,6 +90,7 @@
       dialog.dialog( "open" );
     });
   } );
+    
 $(document).ready(function(){
 
   $('#video-slider'). slick({

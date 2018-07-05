@@ -36,14 +36,12 @@
 				
 			</nav>
 		</div>
-
-
 		<div class="row">
 			<div class="fixed-header-item">
 				<h1 class="fixed-header-item__title">Diez — школа<br>музыкального искусства</h1>
 				<h1 class="fixed-header-item__title-mob">Школа<br>музыкального<br>искусства</h1>
 					<div class="fixed-header-item__content">
-						<p>Научим петь, играть на инструментах, не бояться<br>сцены и получать удовольствие от музыки</p>
+						<p class="fixed-header-item__text">Научим петь, играть на инструментах, не бояться<br>сцены и получать удовольствие от музыки</p>
 					</div>
 					<div class="fixed-header-item__content-mob">
 						<p>Научим петь, играть на<br>инструментах, получать<br>удовольствие от музыки и<br>не бояться сцены</p>
@@ -57,11 +55,11 @@
 						<p class="fixed-header-card__text">Попробуй любые<br>направления бесплатно</p>
 				</div>
 				<div class="fixed-header-card__input-block">
-					<div class="fixed-header-card__input-holder">
+					<div class="fixed-header-card__input-holder fixed-header-card__name">
 					<input class="form-control" id="name" placeholder="Имя" type="text">
 					</div>
 				</div>
-				<div class="fixed-header-card__input-block">
+				<div class="fixed-header-card__input-block fixed-header-card__phone">
 					<div class="fixed-header-card__input-holder">
 						<input class="form-control" id="phone" placeholder="Телефон" type="tel">
 					</div>
@@ -79,7 +77,7 @@
 						</select>
 					</div>
 				</div>
-				<div class="fixed-header-card__botton"><button>Записаться</button></div>
+				<div class="fixed-header-card__botton"><button class="fixed-header-card__botton-btn">ЗАПИСАТЬСЯ</button></div>
 			</div>
 		</form>
 		</div>
@@ -108,12 +106,12 @@
 		<div class="promo__inner">
 			<div class="promo__row">
 				<div class="promo__col promo__col--6">
-					<div class="promo__row-one">
 						<div class="promo__col promo__col--2">
 
 							<h2 class="promo__item-title">Растим музыкантов</h2>
 
 						</div>
+					<div class="promo__row-one">
 						<div class="promo__col promo__col--5 promo__desk-one">
 							<div class="card three-card">
 								<h3 class="promo__card-title">Вокал</h3>
@@ -156,6 +154,7 @@
 						<div class="promo__col promo__col--6 promo__desk-five">
 							<div class="card five-card decrease">
 								<h3 class="promo__card-directions">ВСЕ<br>НАПРАВЛЕНИЯ</h3>
+								<h3 class="promo__card-directions-desk">Все<br>направления</h3>
 							</div>
 						</div>
 						</div>
@@ -215,41 +214,42 @@
 					</a>
 					</div>
 						</div>
-				</div>
+				
               <div class="advantages__col advantages__col--6 advantages__des">
-                <div class="card advan-four-card">
-                  <div class="advantages__fixed-card-item">
-                    <h3 class="advantages__fixed-card-title">Вводный урок</h3>
-                    <p>Попробуй любые
-                      <br>направления бесплатно</p>
-                  </div>
-                  <div class="advantages__fixed-card-input-block">
-                    <div class="advantages__fixed-card-input-holder">
-                      <input class="form-control" id="name" placeholder="Имя" type="text">
-                    </div>
-                  </div>
-                  <div class="advantages__fixed-card-input-block">
-                    <div class="advantages__fixed-card-input-holder">
-                      <input class="form-control" id="phone" placeholder="телефон" type="tel">
-                    </div>
-                  </div>
-                  <div class="advantages__fixed-card-input-block">
-                    <div class="advantages__fixed-card-input-holder">
-                      <select id="MusicalType" class="form-control">
-                        <option>Направления</option>
-                        <option>Направление-Гитара</option>
-                        <option>Направление-Бас-гитара</option>
-                        <option>Направление-Фортепиано</option>
-                        <option>Направление-Вокал</option>
-                        <option>Направление-Ударные</option>
-                        <option>Направление-Скрипка</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="advantages__fixed-card-botton">
-                    <button>Записаться</button>
-                  </div>
-                </div>
+              
+				<form action="" class="fixed-header-card">
+			<div class="wrap advantages__wrap">
+				<div class="fixed-header-card__item advantages__form-item">
+					<h3 class="fixed-header-card__title advantages__form-title">Вводный урок</h3>
+						<p class="fixed-header-card__text advantages__form-text">Попробуй любые<br>направления бесплатно</p>
+				</div>
+				<div class="fixed-header-card__input-block">
+					<div class="fixed-header-card__input-holder fixed-header-card__name">
+					<input class="form-control advantages__form-control" id="name" placeholder="Имя" type="text">
+					</div>
+				</div>
+				<div class="fixed-header-card__input-block fixed-header-card__phone">
+					<div class="fixed-header-card__input-holder">
+						<input class="form-control advantages__form-control" id="phone" placeholder="Телефон" type="tel">
+					</div>
+				</div>
+				<div class="fixed-header-card__input-block">
+					<div class="fixed-header-card__input-holder">
+						<select id="MusicalType advantages__MusicalType" class="form-control advantages__form-control">
+           					 <option>Направления</option>
+           					 <option>Направление-Гитара</option>
+           					 <option>Направление-Бас-гитара</option>
+           					 <option>Направление-Фортепиано</option>
+            				 <option>Направление-Вокал</option>
+            				 <option>Направление-Ударные</option>
+            				 <option>Направление-Скрипка</option>
+						</select>
+					</div>
+				</div>
+				<div class="fixed-header-card__botton"><button class="fixed-header-card__botton-btn advantages__btn">ЗАПИСАТЬСЯ</button></div>
+			</div>
+		</form>
+              </div>
               </div>
             </div>
           </div>
