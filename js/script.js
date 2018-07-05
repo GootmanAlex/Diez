@@ -130,6 +130,14 @@ $(window).on('resize', function(){
   $('#select').chosen({disable_search:true,
   width:'100%'});
 
+$(document).ready(function(){
+if ( $(window).width() < 1024) {
+
+$("#mySlider").slick();
+} else {
+$("#mySlider").slick('unslick');
+}
+ });
 
 
 /*----------ВИДЕО----------------*/
