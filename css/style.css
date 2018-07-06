@@ -867,7 +867,7 @@ h3, .promo__card-title {
 	line-height: 0px;
 }
 p,
-.form-control,
+.form-control, .advantages__form-control, 
 span {
 	font-family: 'PT Sans', sans-serif;
 	font-style: normal;
@@ -951,7 +951,8 @@ span {
 .fixed-header-card__botton,
 .advantages__fixed-card-botton,
 .location__fixed-card-botton,
-.fixed-header-card__botton-btn {
+.fixed-header-card__botton-btn, 
+.advantages__botton-btn {
 	font-family: 'PT Sans', sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -1290,8 +1291,13 @@ span{
 		flex-basis:50%;
 	}
 
-.advantages__wrap{
-	border: 2px solid;
+/*Вводный урок ----------------- карточка*/
+* {
+    box-sizing: border-box;
+}
+
+.advantages__wrap {
+    border: 2px solid;
     border-color: #eec643;
     margin: 0px;
     margin-top: 17px;
@@ -1299,36 +1305,64 @@ span{
     margin-left: 31px;
 }
 
-.advantages__form-title{
-	padding-top: 12px;
-	color: #eec643;
-}
-
-.advantages__form-item{
-	margin-left: 27px;
+.advantages__item {
+    margin-left: 27px;
     margin-bottom: 193px;
     margin-top: 4px;
 }
 
-.advantages__form-text{
-	margin-top: 4px;
+.advantages__input-block {
+    margin-top: 16px;
+    margin-left: 29px;
 }
 
-.advantages__btn{
-	background-color: #eec643;
-	border: 1px solid #eec643;
+.advantages__title {
+  
+    padding-top: 12px;
+    color: #eec643;
+    padding-left: 0px;
+    margin: 0;
+}
+
+.advantages__text {
+    margin: 0;
+    margin-top: 4px;
+    color: #596063;
 }
 
 .advantages__form-control{
-	    border-bottom: 2px solid #eec643;
-	    color: #596063;
+    border: none;
+    text-decoration: none;
+    border-bottom: 2px solid #eec643;
+    color: #596063;
+    background-color: rgba(255,255,255,-0.149);
+    width: 211px;
 }
 
-.advantages__MusicalType{
+.button, .select {
+    text-transform: none;
+    margin: 0;
+
+}
+
+.advantages__botton-btn{
+      background-color: #eec643;
+      border: 1px solid #eec643;
+      width: 266px;
+      height: 68px;
+      text-shadow: none;
+      box-shadow: none;
+
+      color: #f9fcfc;
+      margin-left: 0px;
+      margin-top: 62px;
+}
+  
+ .advantages__MusicalType{
 	border-bottom: 2px solid #eec643;
 	color: #596063;
 }
-
+/*Вводный урок -------------------- карточка*/ 
 
 
 /* СЕКЦИЯ advantages------------КОНЕЦ!----------->>>>>> */
@@ -1336,22 +1370,80 @@ span{
 
 /* СЕКЦИЯ activity--------------------НАЧАЛО!----------------------->>>>>>Т */
 
+.activity__row{
+	position: relative;
+}
 
-/* СЕКЦИЯ activity--------------------КОНЕЦ!----------------------->>>>>>Т */
+.activity__video-slider{
+	display: flex;
+	margin-left: 115px;
+    margin-top: 72px;
+}
 
+.activity__wrap{
+	margin-top: 17px;
+}
 
-	/* СЕКЦИЯ activity--------------------НАЧАЛО!----------------------->>>>>>Т */
+.activity__video-Yang-Zhuo, 
+.activity__video-Summer-calm, 
+.activity__video-Sergey-Trofimov{
+	margin-left: 30px;
+	margin-bottom: 30px;
+	margin-top: 0;
+}
 
-	.activity__container {
-		/*width: 1280px;*/
-		margin:0 auto;
-	}
-	.activity__row {
-		/*width: 1170px;*/
-		margin:0 auto;
-		display:flex;
-	}
-	.activity__video-winter-cherry {
+.activity__item-title{
+	display: none;
+}
+
+.activity__item-title-desk{
+	display: block;
+	transform: rotate(-90deg);
+    margin-top: 200px;
+    max-width: 100%;
+    position: absolute;
+	color: black;
+    margin: 0;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border-color: #eec643;
+    margin-left: 19px;
+    padding-left: 8px;
+    transform-origin: left top;
+    left: 35px;
+    bottom: -42px;
+    width: 569px;
+}
+
+.activity__block-one-text{
+	display: none;
+}
+
+.activity__block-one-text-desk{
+	display: block;
+	margin: 0px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.activity__block-one-title {
+    padding-top: 12px;
+    padding-left: 30px;
+}
+
+.activity__block-two-text {
+	padding-left: 15px;
+    padding-top: 18px;
+}
+
+.activity__block-two-title {
+    padding-top: 133px;
+    padding-left: 15px;
+}
+
+.activity__video-winter-cherry {
 		background-image:url(../img/video_card_img_1.jpg);
 		background-repeat:no-repeat;
 		width:770px;
@@ -1387,6 +1479,19 @@ span{
 		color:white;
 		text-decoration:none;
 	}
+/* СЕКЦИЯ activity--------------------КОНЕЦ!----------------------->>>>>>Т */
+
+
+	/* СЕКЦИЯ activity--------------------НАЧАЛО!----------------------->>>>>>Т */
+
+	.activity__container {
+		/*width: 1280px;*/
+	}
+	.activity__row {
+		/*width: 1170px;*/
+
+	}
+	
 
 
 }
