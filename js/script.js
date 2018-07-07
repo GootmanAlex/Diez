@@ -120,7 +120,15 @@ function CheckWindowSize(){
   } 
 }
 
+/*-------------------Бургер---------------*/
+$('.menu-btn').on('click', function(e){
+  e.preventDefault;
+  $(this).toggleClass('menu-btn-active');
+  $('.header-menu').toggleClass('header-menu_active');
+  
+  });
 
+/*-------------------Бургер---------------*/
 
 CheckWindowSize();
 $(window).on('resize', function(){
@@ -140,6 +148,7 @@ $(window).on('resize', function(){
 
   $('#select').chosen({disable_search:true,
   width:'100%'});
+
 
 
 

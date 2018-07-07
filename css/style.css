@@ -22,15 +22,13 @@
 	width: 100%;
 }
 .row {
-	display: flex;
-	flex-wrap: wrap;
+	display: block;
 }
 .wrapper {
+		min-width: 320px;
 		background-image:url(../img/bg_main-mob.jpg);
 		background-repeat:no-repeat;
-		/*width: 1280px;*/
 		height:536px;
-		width: 320px;
 		background-size:cover;
 		background-position:center;
 	}
@@ -161,7 +159,123 @@ div#users-contain table td, div#users-contain table th {
 .fixed-header__container{
 	padding-top: 22px;
 	padding-left: 15px;
+/*	display: flex;
+	justify-content: space-between;*/
+	position: relative;
 }
+
+/*-----------ГАМБУРГЕР---------*/
+
+.fixed-header__logo{
+/*	content: '';*/
+/*	width: 65px;*/
+/*	height: 24px;*/
+	background-position: -5px -120px;
+	z-index: 2;
+
+}
+
+.fixed-header__section-btn{
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu-btn{
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: relative;
+}
+
+.menu-btn .span-btn,
+.menu-btn .span-btn::before,
+.menu-btn .span-btn::after {
+	display: block;
+	position: absolute;
+	top: 64%; margin-top: -1px;
+	left: 43%; margin-left: -10px;
+	width: 24px;
+	height: 2px;
+	background-color: #f9fcfc;
+	transform: rotate(-90deg);
+}
+
+.menu-btn .span-btn::before,
+.menu-btn .span-btn::after {
+	content: '';
+	display: block;
+	transition: 0.5s;
+}
+
+.menu-btn .span-btn::before{
+	transform: translateY(-8px);
+}
+
+.menu-btn .span-btn::after{
+	transform: translateY(8px);
+}
+
+.menu-btn-active .span-btn{
+	height: 0;
+}
+
+.menu-btn-active .span-btn:before{
+	transform: rotate(45deg);
+}
+
+.menu-btn-active .span-btn:after{
+	transform: rotate(-45deg);
+}
+
+.fixed-header__navigation{
+	display: flex;
+	position: absolute;
+	top: 1px;
+    right: 1px;
+}
+
+.header-menu__list{
+	display: flex;
+	flex-flow: column wrap;
+	padding-left: 0;
+	padding-top: 30px;
+    margin-right: 7px;
+
+}
+
+.header-menu{
+	background-color: black;
+	height: 193px;
+	transition: 0.5s;
+	transform-origin: right center;
+	transform: scaleX(0) translateX(20%);
+	opacity: 0;
+	position: absolute;
+}
+
+.header-menu_active{
+	transform: scaleX(1) translateX(0);
+	opacity: 1;
+}
+
+.header-menu__item{
+	text-decoration: none;
+	color: #f9fcfc;
+	margin-bottom: 20px;
+	margin-left: 15px;
+}
+
+.header-menu{
+	padding-right: 186px;
+    left: -276px;	
+}
+
+
+
+/*-----------ГАМБУРГЕР---------*/
+
+
 
 /*-----------------Promo------------------*/
 
@@ -172,27 +286,27 @@ div#users-contain table td, div#users-contain table th {
 .promo__row {
 		display:flex;
 		flex-wrap:wrap;
-		margin-left:-4px;
+	/*	margin-left:-4px;*/
 /*		margin-right:-15px;*/
 		/*height: 1170px;*/
 	}
 
 	.promo__item-title{
-		color: black;
+		color: #021a23;
 	}
 
 .promo__item-title{
-	color: black;
+	color: #021a23;
     margin: 0;
     border-bottom: 1px solid;
     border-top: 1px solid;
     padding-bottom: 4px;
     padding-top: 4px;
     border-color: #eec643;
-    margin-left: 23px;
-    padding-left: 7px;
-    width: 225px;
-    margin-top:25px;
+    margin-left: 16px;
+    padding-left: 10px;
+    width: 228px;
+    margin-top: 25px;
 }
 
 
@@ -260,7 +374,7 @@ div#users-contain table td, div#users-contain table th {
 	
 .promo__desk-one{
 	padding-top: 12px;
-    padding-left: 20px;
+    padding-left: 16px;
     order: 3;
 }	
 
@@ -277,7 +391,7 @@ div#users-contain table td, div#users-contain table th {
 
 .promo__desk-two{
 	padding-top: 16px;
-    padding-left: 20px;
+    padding-left: 16px;
     order: 2;
 }
 
@@ -298,14 +412,14 @@ div#users-contain table td, div#users-contain table th {
 	display: flex;
 	flex-basis:auto;
 	padding-top: 16px;
-    padding-left: 20px;
+    padding-left: 16px;
 }
 
 .promo__card-directions{
 	margin: 0;
 	padding-left: 9px;
     padding-top: 6px;
-	color: black;
+	color: #021a23;
 	font-weight: 400;
 	font-size: 16px;
 }
@@ -340,7 +454,7 @@ div#users-contain table td, div#users-contain table th {
 	}
 
 .advantages__item-title{
-	color: black;
+	color: #021a23;
     margin: 0;
     border-bottom: 1px solid;
     border-top: 1px solid;
@@ -348,7 +462,7 @@ div#users-contain table td, div#users-contain table th {
     padding-bottom: 2px;
     padding-top: 6px;
     border-color: #eec643;
-    margin-left: 46px;
+    margin-left: 31px;
     margin-top: 32px;
     width: 228px;
     padding-left: 10px;
@@ -360,7 +474,7 @@ div#users-contain table td, div#users-contain table th {
 	width:288px;
 	height:144px;
 	margin: 0;
-	margin-left: 46px;
+	margin-left: 31px;
     margin-top: 16px;
 }
 
@@ -370,7 +484,7 @@ div#users-contain table td, div#users-contain table th {
 	width:288px;
 	height:144px;
 	margin: 0;
-	margin-left: 46px;
+	margin-left: 31px;
     margin-top: 16px;
 }
 
@@ -380,7 +494,7 @@ div#users-contain table td, div#users-contain table th {
 	width:212px;
 	height:144px;
 	margin: 0;
-	margin-left: 46px;
+	margin-left: 31px;
     margin-top: 16px;
 }
 
@@ -430,7 +544,7 @@ div#users-contain table td, div#users-contain table th {
 	margin: 0;
     padding-left: 8px;
     padding-top: 7px;
-    color: black;
+    color: #021a23;
     font-weight: 400;
     font-size: 16px;
 }
@@ -442,7 +556,7 @@ div#users-contain table td, div#users-contain table th {
 
 
 .activity__item-title{
-	color: black;
+	color: #021a23;
     margin: 0;
     border-bottom: 1px solid;
     border-top: 1px solid;
@@ -467,12 +581,12 @@ div#users-contain table td, div#users-contain table th {
 }
 
 .activity__block-one-title{
-	padding-top: 132px;
-    padding-left: 11px;
+	padding-top: 124px;
+    padding-left: 25px;
 }
 
 .activity__block-one-text{
-	padding-left: 11px;
+	padding-left: 25px;
 }
 
 .activity__block-two-title{
@@ -490,8 +604,8 @@ div#users-contain table td, div#users-contain table th {
 
 .activity__video-winter-cherry{
 	margin: 0;
-	margin-left: 40px;
-    margin-top: 16px;
+	margin-left: 25px;
+    margin-top: 25px;
 
 }
 
@@ -542,6 +656,10 @@ div#users-contain table td, div#users-contain table th {
 		text-decoration:none;
 	}
 
+.activity__item-title-desk{
+	display: none;
+}	
+
 .slick-arrow{
 	
 	position: absolute;
@@ -570,10 +688,19 @@ div#users-contain table td, div#users-contain table th {
 
 /*---------ВИДЕО---Конец----------*/
 
+
+
+
+
 /*------------------Activity-------КОНЕЦ--------*/
 
 
 /*------------------Location-------НАЧАЛО--------*/
+
+.location__map-deskt{
+	display: none;
+}
+
 
 .location__container {
 	width: 100%;
@@ -587,7 +714,7 @@ div#users-contain table td, div#users-contain table th {
 }
 
 .location__item-title{
-	color: black;
+	color: #021a23;
     margin: 0;
     border-bottom: 1px solid;
     border-top: 1px solid;
@@ -605,7 +732,7 @@ div#users-contain table td, div#users-contain table th {
 }
 
 .location__item-text-mob{
-	color: black;
+	color: #021a23;
 	margin-left: 25px;
     margin-top: 22px;
 }
@@ -629,7 +756,7 @@ div#users-contain table td, div#users-contain table th {
 	margin: 0;
     padding-left: 81px;
     padding-top: 15px;
-    color: black;
+    color: #021a23;
     font-weight: 400;
     font-size: 16px;	
 }
@@ -654,7 +781,6 @@ div#users-contain table td, div#users-contain table th {
 		background-repeat:no-repeat;
 		/*width: 1280px;*/
 		height:100%;
-		width: 100%;
 		background-size:cover;
 		background-position:center;
 	}
@@ -690,6 +816,16 @@ div#users-contain table td, div#users-contain table th {
 @media (min-width: 1200px) {
 
 /*----------------fixed-header---------------*/
+
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.promo, .advantages, .activity, .location, .page-footer{
+	width: 1280px;
+}
 
 
 .wrapper {
@@ -740,6 +876,11 @@ div#users-contain table td, div#users-contain table th {
 
 .header-menu__list{
 	margin-right: 45px;
+	flex-flow:unset;
+}
+
+.menu-btn{
+	display: none;
 }
 
 .fixed-header-item {
@@ -769,13 +910,12 @@ div#users-contain table td, div#users-contain table th {
 		255,
 		0.851);
 	}
-	.fixed-header-card__title {
-		padding-left:32px;
-	}
+
 	.fixed-header-card__title {
 		padding-left:0px;
 		padding-top:0px;
 		margin:0;
+		color: #021a23;
 	}
 	.fixed-header-card {
 		width:266px;
@@ -789,7 +929,7 @@ div#users-contain table td, div#users-contain table th {
 	.fixed-header-card__text {
 		margin:0;
 		margin-top: 11px;
-		color:#596063;
+		color:#021a23;
 	}
 	.fixed-header-card__input-block {
 	margin-top: 16px;
@@ -807,6 +947,7 @@ div#users-contain table td, div#users-contain table th {
     margin-top: 122px;
     width: 270px;
     margin-left: -6px;
+        background-color: rgba(255, 255, 255, 0.851)
 	}
 
 .form-control {
@@ -818,7 +959,7 @@ div#users-contain table td, div#users-contain table th {
 
 		#MusicalType,
 	.form-control {
-		color:#596063;
+		color:#787d7c;
 		text-decoration:none;
 		border-bottom:2px solid #021a23;
 	}
@@ -868,7 +1009,7 @@ h3, .promo__card-title {
 }
 p,
 .form-control, .advantages__form-control, 
-span {
+span, .location__form-control {
 	font-family: 'PT Sans', sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -880,7 +1021,7 @@ span {
 	font-weight: 700;
 }
 .fixed-header__logo,
-.fpage-footer__logo {
+.page-footer__logo {
 	font-family: 'Prata Sans', sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -936,7 +1077,7 @@ span {
 	font-weight: 700;
 }
 .fixed-header__logo,
-.fpage-footer__logo {
+.page-footer__logo {
 	font-family: 'Prata Sans', sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -952,7 +1093,8 @@ span {
 .advantages__fixed-card-botton,
 .location__fixed-card-botton,
 .fixed-header-card__botton-btn, 
-.advantages__botton-btn {
+.advantages__botton-btn, 
+.location__botton-btn {
 	font-family: 'PT Sans', sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -980,9 +1122,17 @@ span {
 	display: none;
 }
 
+.section-btn{
+	display: none;
+}
+
 /*----------------fixed-header------End------------*/
 
 /*--------------promo---------------Start----------*/
+
+.promo__row{
+	position: relative;
+}
 
 .promo__desk-one{
 	padding-top: 16px;
@@ -1044,7 +1194,7 @@ span {
 	margin: 0;
 	padding-left: 26px;
     padding-top: 6px;
-	color: black;
+	color: #f9fcfc;
 	font-weight: 700;
 	font-size: 30px;
     line-height: 40px
@@ -1073,19 +1223,19 @@ span{
 }
 
 .promo__item-title{
-	color: black;
+	color: #021a23;
     margin: 0;
     border-bottom: 2px solid;
     border-top: 2px solid;
     padding-bottom: 8px;
     padding-top: 8px;
     border-color: #eec643;
-    margin-left: 19px;
+/*    margin-left: 19px;*/
     padding-left: 8px;
     transform-origin: left top;
-    left: 36px;
-    bottom: -963px;
-    width: 569px;
+    left: 53px;
+    bottom: -57px;
+    width: 570px;
 }
 
 .promo__item-title {
@@ -1099,7 +1249,7 @@ span{
 	position: relative;
 	display: flex;
 /*	margin-top: 74px;*/
-	margin-left: 19px;
+	margin-left: 15px;
    /* flex-wrap: wrap;*/
 }
 
@@ -1170,12 +1320,12 @@ span{
 		display:flex;
 /*		flex-wrap:wrap;*/
 /*		margin-left:-15px;*/
-		margin-right:0px;
-		margin-top: 29px;
+		margin-right: 56px;
+		margin-top: 58px;
 /*		margin-left: 5px;*/
 		flex-wrap:nowrap;
 		position: relative;
-		margin-left: -15px;
+		margin-left: 0px;
 	}
 
 .advantages__col {
@@ -1187,7 +1337,7 @@ span{
 .advantages__item-title {
     padding: 0px 0px 0px 25px;
     padding-top: 5px;
-    color: black;
+    color: #021a23;
     margin: 0;
     height: 69px;
     width: 569px;
@@ -1201,7 +1351,7 @@ span{
     position: absolute;
     transform-origin: left top;
     top: -20px;
-    left: 38px;
+    left: 8px;
 }
 
 .advan-arent {
@@ -1258,7 +1408,7 @@ span{
 		width:270px;
 		height:570px;
 		margin: 0;
-    	margin-left: 45px;
+    	margin-left: 30px;
    		margin-top: 17px;
 	}
 	.advan-four-card {
@@ -1302,7 +1452,7 @@ span{
     margin: 0px;
     margin-top: 17px;
     width: 270px;
-    margin-left: 31px;
+    margin-left: 30px;
 }
 
 .advantages__item {
@@ -1327,14 +1477,14 @@ span{
 .advantages__text {
     margin: 0;
     margin-top: 4px;
-    color: #596063;
+    color: #021a23;
 }
 
 .advantages__form-control{
     border: none;
     text-decoration: none;
     border-bottom: 2px solid #eec643;
-    color: #596063;
+    color: #787d7c;
     background-color: rgba(255,255,255,-0.149);
     width: 211px;
 }
@@ -1375,9 +1525,15 @@ span{
 }
 
 .activity__video-slider{
-	display: flex;
-	margin-left: 115px;
-    margin-top: 72px;
+	
+	margin-left: 130px;
+    margin-top: 63px;
+}
+
+.activity__video-slider:after{
+	content: '';
+	display: table;
+	clear: both;
 }
 
 .activity__wrap{
@@ -1387,6 +1543,7 @@ span{
 .activity__video-Yang-Zhuo, 
 .activity__video-Summer-calm, 
 .activity__video-Sergey-Trofimov{
+	float: left;
 	margin-left: 30px;
 	margin-bottom: 30px;
 	margin-top: 0;
@@ -1402,7 +1559,7 @@ span{
     margin-top: 200px;
     max-width: 100%;
     position: absolute;
-	color: black;
+	color: #021a23;
     margin: 0;
     border-bottom: 2px solid;
     border-top: 2px solid;
@@ -1412,7 +1569,7 @@ span{
     margin-left: 19px;
     padding-left: 8px;
     transform-origin: left top;
-    left: 35px;
+    left: 34px;
     bottom: -42px;
     width: 569px;
 }
@@ -1451,6 +1608,7 @@ span{
 		display:block;
 		color:white;
 		text-decoration:none;
+		float: left;
 	}
 	.activity__video-Yang-Zhuo {
 		background-image:url(../img/video_card_img_2.jpg);
@@ -1460,6 +1618,7 @@ span{
 		display:block;
 		color:white;
 		text-decoration:none;
+		margin-top: 26px;
 	}
 	.activity__video-Summer-calm {
 		background-image:url(../img/video_card_img_3.jpg);
@@ -1479,25 +1638,7 @@ span{
 		color:white;
 		text-decoration:none;
 	}
-/* СЕКЦИЯ activity--------------------КОНЕЦ!----------------------->>>>>>Т */
 
-
-	/* СЕКЦИЯ activity--------------------НАЧАЛО!----------------------->>>>>>Т */
-
-	.activity__container {
-		/*width: 1280px;*/
-	}
-	.activity__row {
-		/*width: 1170px;*/
-
-	}
-	
-
-
-}
-
-
-/* СЕКЦИЯ activity--------------------КОНЕЦ!----------------------->>>>>>Т */
 
 
 *{
@@ -1537,6 +1678,173 @@ span{
 	right: 0;
 }
 
-#select{
+/* СЕКЦИЯ activity--------------------КОНЕЦ!----------------------->>>>>>Т */
+
+/*-------location-----------------------НАЧАЛО--------------*/
+
+.location__decrease{
+	display: none;
+}
+
+
+.location__wrap{
+	display: block;
+}
+
+
+
+
+/***********-----КАРТОЧКА----------------*******/
+.location__wrap {
+    border: 2px solid;
+    border-color: #eec643;
+    margin: 0px;
+    margin-top: 17px;
+    width: 270px;
+    margin-left: 30px;
+}
+
+.location__item-form {
+    margin-left: 28px;
+    margin-bottom: 193px;
+    margin-top: 4px;
+}
+
+.location__input-block {
+    margin-top: 16px;
+    margin-left: 29px;
+}
+
+.location__title {
+  
+    padding-top: 12px;
+    color: #eec643;
+    padding-left: 0px;
+    margin: 0;
+}
+
+.location__text {
+    margin: 0;
+    margin-top: 4px;
+    color: #596063;
+}
+
+.location__form-control{
+    border: none;
+    text-decoration: none;
+    border-bottom: 2px solid #eec643;
+    color: #787d7c;
+    background-color: rgba(255,255,255,-0.149);
+    width: 211px;
+}
+
+.button, .select {
+    text-transform: none;
+    margin: 0;
 
 }
+
+.location__botton-btn{
+      background-color: #eec643;
+      border: 1px solid #eec643;
+      width: 266px;
+      height: 68px;
+      text-shadow: none;
+      box-shadow: none;
+
+      color: #f9fcfc;
+      margin-left: 0px;
+      margin-top: 62px;
+}
+  
+ .location__MusicalType{
+	border-bottom: 2px solid #eec643;
+	color: #787d7c;
+}
+/***********-----КАРТОЧКА----------------*******/
+
+.location__row{
+	position: relative;
+}
+
+.location__item-title{
+	display: block;
+    transform: rotate(0deg);
+    margin-top: 200px;
+    max-width: 100%;
+    position: absolute;
+    color: #021a23;
+    margin: 0;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    padding-bottom: 10px;
+    padding-top: 6px;
+    border-color: #eec643;
+    margin-left: 19px;
+    padding-left: 24px;
+    transform-origin: left top;
+    left: 36px;
+    bottom: 503px;
+    width: 569px;
+}
+
+.location__map{
+	display: none;
+}
+
+.location__map-deskt{
+	display: block;
+	margin-left: 55px;
+}
+
+.location__item-text-mob{
+	display: none;
+}
+
+.location__item-text-desk{
+	display: block;
+	color: #021a23;
+	float: right;
+	margin-top: 82px;
+    margin-right: 76px;
+}
+
+.location__text{
+	color: #021a23;
+}
+
+.location-form{
+	margin-top: 42px;
+}
+
+/*-------location-----------------------КОНЕЦ--------------*/
+
+
+/*----------page-footer-----------------НАЧАЛО------------*/
+
+.page-footer{
+	display: block;
+	margin-bottom: 54px;
+}
+
+.page-footer__navigation{
+	float: right;
+    padding-right: 22px;
+    margin-top: 92px;
+}
+
+.footer-menu__item{
+	padding-right: 40px;
+	text-decoration: none;
+	color: #021a23;
+}
+
+.footer-logo{
+	font-size: 20px;
+	padding-top: 83px;
+    padding-left: 53px;
+}
+/*----------page-footer-----------------КОНЕЦ------------*/
+
+
+
