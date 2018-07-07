@@ -856,6 +856,21 @@ body{
 		padding-right:19px;
 		padding-top:30px;
 	}
+.header-menu{
+	background-color: transparent;
+	height: 193px;
+	transition: 0;
+	transform-origin: right center;
+	transform: scaleX(1) translateX(0);
+	opacity: 1;
+	position: relative;
+	padding-right: 0px; 
+    left: 0px; 
+
+}	
+
+
+
 
 .logo {
 		color:#e0bb40;
@@ -871,12 +886,15 @@ body{
 		list-style:none;
 		text-decoration:none;
 		padding: 0;
-		padding-left: 30px
+		padding-left: 30px;
+		margin-left: 8px;
 	}
 
 .header-menu__list{
 	margin-right: 45px;
 	flex-flow:unset;
+	padding-top: 0;
+	margin-right: 53px;
 }
 
 .menu-btn{
@@ -885,7 +903,7 @@ body{
 
 .fixed-header-item {
 	padding-left: 55px;
-    padding-top: 221px;
+    padding-top: 301px;
 	width:75%;
 }
 
@@ -944,7 +962,7 @@ body{
     border: 2px solid;
     border-color: #021a23;
     margin: 0px;
-    margin-top: 122px;
+    margin-top: 202px;
     width: 270px;
     margin-left: -6px;
         background-color: rgba(255, 255, 255, 0.851)
@@ -967,6 +985,9 @@ body{
 		width:211px;
 	}
 
+.fixed-header__navigation{
+	display: block;
+}
 
 
 .fixed-header-card__botton-btn{
