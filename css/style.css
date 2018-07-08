@@ -626,7 +626,7 @@ div#users-contain table td, div#users-contain table th {
 		background-image:url(../img/video_card_img_11.jpg);
 		background-repeat:no-repeat;
 		width:240px;
-		height:186px;
+		height:169px;
 		display:block;
 		color:white;
 		text-decoration:none;
@@ -810,9 +810,15 @@ div#users-contain table td, div#users-contain table th {
 }
 
 .fixed-header-item__title, .fixed-header-item__content{
-	display: contents;
+	display: block;
 }
 	
+.fixed-header-item__title{
+	margin: 0;
+    margin-bottom: 20px;
+}
+
+
 }
 
 
@@ -906,7 +912,7 @@ body{
 
 .fixed-header-item {
 	padding-left: 55px;
-    padding-top: 301px;
+    padding-top: 291px;
 	width:75%;
 }
 
@@ -916,7 +922,7 @@ body{
 
 .fixed-header-item__text{
 	margin: 0;
-    margin-top: 25px;
+    margin-top: 21px;
 }
 
 	.fixed-header-card {
@@ -978,12 +984,7 @@ body{
 	width: 211px;
 	}
 
-		#MusicalType,
-	.form-control {
-		color:#787d7c;
-		text-decoration:none;
-		border-bottom:2px solid #021a23;
-	}
+
 	#MusicalType {
 		width:211px;
 	}
@@ -1010,7 +1011,7 @@ h1 {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 55px;
-	line-height: 35px;
+	line-height: 55px;
 	color: #f9fcfc;
 }
 h2 {
@@ -1148,6 +1149,13 @@ span {
 
 .section-btn{
 	display: none;
+}
+
+#MusicalType,
+.form-control {
+	color:#787d7c;
+	text-decoration:none;
+	border-bottom:2px solid #021a23;
 }
 
 /*----------------fixed-header------End------------*/
