@@ -237,15 +237,16 @@ div#users-contain table td, div#users-contain table th {
 }
 
 .header-menu__list{
+	
+
+}
+
+.header-menu{
 	display: flex;
 	flex-flow: column wrap;
 	padding-left: 0;
 	padding-top: 55px;
     margin-right: 7px;
-
-}
-
-.header-menu{
 	background-color: black;
 	height: 224px;
 	transition: 0.5s;
@@ -265,7 +266,7 @@ div#users-contain table td, div#users-contain table th {
 .header-menu__item{
 	text-decoration: none;
 	color: #f9fcfc;
-	margin-bottom: 20px;
+	margin-top: 20px;
 	margin-left: 15px;
 }
 
@@ -676,7 +677,6 @@ div#users-contain table td, div#users-contain table th {
 	border:0;
 	width: 30px;
 	height: 30px;
-	background: #ff0;
 	background: transparent;
 	font:0/0 a;
 	color: transparent;
@@ -741,8 +741,25 @@ div#users-contain table td, div#users-contain table th {
 /*---------ВИДЕО---Конец----------*/
 
 
+			/*-----------СТРЕЛКИ ----------*/
+
+.slick-arrow{
+	background: url("../icons/css_spritess.png") no-repeat 0 0;
+	width: 9px;
+	height: 17px;
+}
 
 
+.slick-prev{
+	background-position: -63px -100px;
+	left: 3%;
+}
+
+.slick-next{
+	background-position: -92px -100px;
+	left: 100%;
+}
+			/*-----------СТРЕЛКИ ----------*/
 
 /*------------------Activity-------КОНЕЦ--------*/
 
@@ -910,13 +927,14 @@ body{
 
 .header-menu {
 		display:flex;
+		flex-flow: nowrap;
 		justify-content:flex-end;
 		padding-right:19px;
 		padding-top:30px;
 	}
 .header-menu{
 	background-color: transparent;
-	height: 193px;
+	height: 169px;
 	transition: 0;
 	transform-origin: right center;
 	transform: scaleX(1) translateX(0);
@@ -1040,6 +1058,8 @@ body{
 
 .fixed-header__navigation{
 	display: block;
+	top: -3px;
+    right: 49px;
 }
 
 
@@ -1791,9 +1811,6 @@ span{
 	top: 50%;
 	padding: 0;
 	border:0;
-	width: 30px;
-	height: 30px;
-	background: #ff0;
 	background: transparent;
 	font:0/0 a;
 	color: transparent;
