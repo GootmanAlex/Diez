@@ -630,6 +630,7 @@ div#users-contain table td, div#users-contain table th {
 		display:block;
 		color:white;
 		text-decoration:none;
+		position: relative;
 	}
 	.activity__video-Yang-Zhuo {
 		background-image:url(../img/video_card_img_2.jpg);
@@ -639,6 +640,7 @@ div#users-contain table td, div#users-contain table th {
 		display:block;
 		color:white;
 		text-decoration:none;
+		position: relative;
 	}
 	.activity__video-Summer-calm {
 		background-image:url(../img/video_card_img_3.jpg);
@@ -648,6 +650,7 @@ div#users-contain table td, div#users-contain table th {
 		display:block;
 		color:white;
 		text-decoration:none;
+		position: relative;
 	}
 	.activity__video-Sergey-Trofimov {
 		background-image:url(../img/video_card_img_4.jpg);
@@ -657,6 +660,7 @@ div#users-contain table td, div#users-contain table th {
 		display:block;
 		color:white;
 		text-decoration:none;
+		position: relative;
 	}
 
 .activity__item-title-desk{
@@ -686,6 +690,51 @@ div#users-contain table td, div#users-contain table th {
 
 .slik-next{
 	right: 0;
+}
+
+
+.yellow-icon-mob{
+	background: url("../icons/css_sprites.png") no-repeat 0 0;
+	width: 33px;
+  	height: 42px;
+  	position: absolute;
+  	display: block;
+  	left: 50%;
+    top: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.yellow-triangle-mob{
+	background-position: -10px -100px; 
+}
+
+.yellow-triangle-mob:hover{
+	background-position: -160px -10px; 
+}
+
+.yellow-icon, .yellow-triangle{
+	display: none;
+}
+
+.yellow-icon-deskt{
+	background: url("../icons/css_sprites.png") no-repeat 0 0;
+	width: 33px;
+  	height: 42px;
+  	position: absolute;
+  	display: block;
+  	left: 50%;
+    top: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.yellow-triangle-deskt{
+	background-position: -10px -100px; 
+}
+
+.yellow-triangle-deskt:hover{
+	background-position: -160px -10px; 
 }
 
 
@@ -1641,6 +1690,7 @@ span{
 		color:white;
 		text-decoration:none;
 		float: left;
+		position: relative;
 	}
 	.activity__video-Yang-Zhuo {
 		background-image:url(../img/video_card_img_2.jpg);
@@ -1651,6 +1701,7 @@ span{
 		color:white;
 		text-decoration:none;
 		margin-top: 26px;
+		position: relative;
 	}
 	.activity__video-Summer-calm {
 		background-image:url(../img/video_card_img_3.jpg);
@@ -1660,6 +1711,7 @@ span{
 		display:block;
 		color:white;
 		text-decoration:none;
+		position: relative;
 	}
 	.activity__video-Sergey-Trofimov {
 		background-image:url(../img/video_card_img_4.jpg);
@@ -1669,8 +1721,55 @@ span{
 		display:block;
 		color:white;
 		text-decoration:none;
+		position: relative;
 	}
 
+.yellow-icon{
+	background: url("../icons/css_sprites.png") no-repeat 0 0;
+	width: 55px;
+  	height: 70px;
+  	position: absolute;
+  	display: block;
+  	left: 50%;
+    top: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.yellow-triangle{
+	background-position: -85px -10px;
+	display: block; 
+}
+
+.yellow-triangle:hover{
+	background-position: -10px -10px;
+	display: block; 
+}
+
+.yellow-icon-mob, .yellow-triangle-mob {
+	display: none;
+}
+
+.yellow-icon-deskt{
+	background: url("../icons/css_sprites.png") no-repeat 0 0;
+	width: 33px;
+  	height: 42px;
+  	position: absolute;
+  	display: block;
+  	left: 50%;
+    top: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.yellow-triangle-deskt{
+	background-position: -10px -100px; 
+}
+
+.yellow-triangle-deskt:hover{
+	background-position: -160px -10px; 
+}
 
 
 *{

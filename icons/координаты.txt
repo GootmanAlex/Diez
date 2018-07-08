@@ -1,0 +1,28 @@
+
+x
+
+.bg-play_button_копия {
+    width: 33px; height: 42px;
+    background: url('css_sprites.png') -160px -10px;
+}
+
+x
+
+.bg-play_button_копия_2 {
+    width: 55px; height: 70px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+x
+
+.bg-play_button {
+    width: 55px; height: 70px;
+    background: url('css_sprites.png') -85px -10px;
+}
+
+x
+
+.bg-play_button_1 {
+    width: 33px; height: 42px;
+    background: url('css_sprites.png') -10px -100px;
+}
