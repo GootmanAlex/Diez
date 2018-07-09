@@ -136,14 +136,21 @@ div#users-contain table td, div#users-contain table th {
 
 
 .fixed-header-item__title-mob{
-	padding-top: 64px;
+/*	padding-top: 64px;*/
     padding-left: 16px;
+    margin-bottom: 4px;
+    margin-top: 85px;
 }
 
 .fixed-header-item__content-mob{
 	padding-left: 16px;
-    margin-top: -17px;
 }
+
+.fixed-header-item__text-mob{
+	margin: 0;
+	margin-bottom: 17px;
+}
+
 
 #create-user{
  width: 288px;
@@ -185,7 +192,8 @@ div#users-contain table td, div#users-contain table th {
 	display: block;
 	width: 50px;
 	height: 50px;
-	position: relative;
+	position: absolute;
+	right: 1px;
 	z-index: 1;
 }
 
@@ -272,7 +280,7 @@ div#users-contain table td, div#users-contain table th {
 
 .header-menu{
 	padding-right: 0px;
-    left: -269px;	
+    left: -319px;	
 }
 
 
@@ -289,7 +297,7 @@ div#users-contain table td, div#users-contain table th {
 }
 .promo__row {
 		display:flex;
-		flex-wrap:wrap;
+		flex-direction: column;
 	/*	margin-left:-4px;*/
 /*		margin-right:-15px;*/
 		/*height: 1170px;*/
@@ -313,11 +321,34 @@ div#users-contain table td, div#users-contain table th {
     margin-top: 25px;
 }
 
+/*---------------Выравнивание по центру------*/
+.promo__col {
+	box-sizing:border-box;
+	margin: 0 auto;
+}
 
-	.promo__col {
-/*		padding:0 11px;*/
-		box-sizing:border-box;
+.advantages__row-mus{
+	margin: 0 auto;
+}
+
+.advantages__col{
+	margin: 0 auto;
+}
+
+.activity__item{
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+
+.location__item{
+	margin: 0 auto;
+}
+
+/*---------------Выравнивание по центру------*/
+	.alignment{
+		margin: 0 auto;
 	}
+
 	.card {
 		color:#fff;
 		padding:5px;
@@ -416,7 +447,7 @@ div#users-contain table td, div#users-contain table th {
 	display: flex;
 	flex-basis:auto;
 	padding-top: 16px;
-    padding-left: 16px;
+    padding-left: 9px;
 }
 
 .promo__card-directions{
@@ -451,7 +482,7 @@ div#users-contain table td, div#users-contain table th {
 }
 .advantages__row {
 		display:flex;
-		flex-wrap:wrap;
+		flex-direction: column;
 		margin-left:-15px;
 /*		margin-right:-15px;*/
 		/*height: 1170px;*/
@@ -466,10 +497,11 @@ div#users-contain table td, div#users-contain table th {
     padding-bottom: 2px;
     padding-top: 6px;
     border-color: #eec643;
-    margin-left: 31px;
+/*    margin-left: 31px;*/
     margin-top: 32px;
-    width: 228px;
+    width: 218px;
     padding-left: 10px;
+    margin-right: 28px;
 }
 
 .advan-one-card {
@@ -498,7 +530,7 @@ div#users-contain table td, div#users-contain table th {
 	width:212px;
 	height:144px;
 	margin: 0;
-	margin-left: 31px;
+	margin-left: 24px;
     margin-top: 16px;
 }
 
@@ -557,21 +589,25 @@ div#users-contain table td, div#users-contain table th {
 
 /*------------------Activity-------НАЧАЛО-------*/
 
+.activity__row{
+	display: flex;
+    flex-direction: column;
+}
 
 
 .activity__item-title{
+	margin: 0 ;
 	color: #021a23;
-    margin: 0;
     border-bottom: 1px solid;
     border-top: 1px solid;
     margin-top: 24px;
     padding-bottom: 2px;
     padding-top: 6px;
     border-color: #eec643;
-    margin-left: 16px;
-    margin-top: 32px;
-    width: 228px;
+    width: 218px;
     padding-left: 10px;
+    margin-top: 32px;
+    margin-right: 43px;
 }
 
 .activity__block-one-text-desk {
@@ -607,15 +643,15 @@ div#users-contain table td, div#users-contain table th {
 }
 
 .activity__video-winter-cherry{
-	margin: 0;
-	margin-left: 25px;
-    margin-top: 25px;
-
+	margin-left: 0px;
+    margin-top: 0px;
+	background-size: cover;
 }
 
 .activity__video-Yang-Zhuo, .activity__video-Summer-calm, .activity__video-Sergey-Trofimov{
-	margin-left: 25px;
-    margin-top: 25px;
+	margin-left: 0px;
+    margin-top: 0px;
+    background-size: cover;
 }
 
 
@@ -623,11 +659,16 @@ div#users-contain table td, div#users-contain table th {
 
 /*---------ВИДЕО-------------*/
 
+.activity__video-slider{
+	margin: 0 auto;
+	width: 92%;
+}
+
 .activity__video-winter-cherry {
 		background-image:url(../img/video_card_img_11.jpg);
 		background-repeat:no-repeat;
-		width:240px;
-		height:169px;
+		width:100%;
+		min-height:169px;
 		display:block;
 		color:white;
 		text-decoration:none;
@@ -636,8 +677,8 @@ div#users-contain table td, div#users-contain table th {
 	.activity__video-Yang-Zhuo {
 		background-image:url(../img/video_card_img_2.jpg);
 		background-repeat:no-repeat;
-		width:270px;
-		height:169px;
+		width:100%;
+		min-height:169px;
 		display:block;
 		color:white;
 		text-decoration:none;
@@ -646,8 +687,8 @@ div#users-contain table td, div#users-contain table th {
 	.activity__video-Summer-calm {
 		background-image:url(../img/video_card_img_3.jpg);
 		background-repeat:no-repeat;
-		width:270px;
-		height:169px;
+		width:100%;
+		min-height:169px;
 		display:block;
 		color:white;
 		text-decoration:none;
@@ -656,8 +697,8 @@ div#users-contain table td, div#users-contain table th {
 	.activity__video-Sergey-Trofimov {
 		background-image:url(../img/video_card_img_4.jpg);
 		background-repeat:no-repeat;
-		width:270px;
-		height:169px;
+		width:100%;
+		min-height:169px;
 		display:block;
 		color:white;
 		text-decoration:none;
@@ -684,13 +725,6 @@ div#users-contain table td, div#users-contain table th {
 
 }
 
-.slick-prev{
-	left: 0;
-}
-
-.slik-next{
-	right: 0;
-}
 
 
 .yellow-icon-mob{
@@ -752,7 +786,7 @@ div#users-contain table td, div#users-contain table th {
 
 .slick-prev{
 	background-position: -63px -100px;
-	left: 3%;
+	right: 100%;
 }
 
 .slick-next{
@@ -777,7 +811,7 @@ div#users-contain table td, div#users-contain table th {
 
 .location__row {
 	display:flex;
-	flex-wrap:wrap;
+	flex-direction: column;
 /*	margin-left:-15px;
 	margin-right:-15px;*/
 }
@@ -808,6 +842,7 @@ div#users-contain table td, div#users-contain table th {
 
 .location__map{
 	margin-left: 17px;
+	margin-bottom: 9px;
 }
 
 .location__wrap{
@@ -817,8 +852,8 @@ div#users-contain table td, div#users-contain table th {
 .location__decrease{
 	width: 288px;
     height: 60px;
-    margin: 9px 0px 0px 16px;
-    margin-bottom: 30px;
+	margin-left: 16px;
+
 }
 
 .location__card-directions{
@@ -843,7 +878,6 @@ div#users-contain table td, div#users-contain table th {
 
 
 @media (min-width: 540px) {
-
 
 .wrapper {
 		background-image:url(../img/bg_main.jpg);
@@ -901,6 +935,13 @@ body{
 .promo, .advantages, .activity, .location, .page-footer{
 	width: 1280px;
 }
+
+/*****------------------------**************/
+
+
+
+/*****------------------------**************/
+
 
 
 .wrapper {
@@ -1354,6 +1395,10 @@ span{
    /* flex-wrap: wrap;*/
 }
 
+.promo__col{
+	margin: 0;
+}
+
 .card {
 		color:#fff;
 		padding:5px;
@@ -1404,7 +1449,6 @@ span{
 }
 
 
-
 /*--------------promo---------------END----------*/
 	
 	
@@ -1425,6 +1469,7 @@ span{
 		margin-top: 58px;
 /*		margin-left: 5px;*/
 		flex-wrap:nowrap;
+		flex-direction: row;
 		position: relative;
 		margin-left: 0px;
 	}
@@ -1621,6 +1666,19 @@ span{
 
 /* СЕКЦИЯ activity--------------------НАЧАЛО!----------------------->>>>>>Т */
 
+.activity__video-winter-cherry{
+	margin-left: 25px;
+    margin-top: 25px;
+}
+
+.activity__video-Yang-Zhuo, .activity__video-Summer-calm, .activity__video-Sergey-Trofimov{
+	margin-left: 25px;
+    margin-top: 25px;
+}
+
+
+
+
 .activity__row{
 	position: relative;
 }
@@ -1652,6 +1710,10 @@ span{
 
 .activity__item-title{
 	display: none;
+}
+
+.activity__item{
+	margin-bottom: 0;
 }
 
 .activity__item-title-desk{
@@ -1839,7 +1901,9 @@ span{
 	display: block;
 }
 
-
+.location__item{
+	margin: 0 ;
+}
 
 
 /***********-----КАРТОЧКА----------------*******/
@@ -1912,6 +1976,8 @@ span{
 /***********-----КАРТОЧКА----------------*******/
 
 .location__row{
+	display:flex;
+	flex-direction: row;
 	position: relative;
 }
 
