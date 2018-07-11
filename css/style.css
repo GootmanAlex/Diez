@@ -148,7 +148,6 @@ div#users-contain table th {
 	box-shadow: none;
 	border: 1px solid rgb(238, 198, 67);
 	color: #f9fcfc;
-	margin-left: 16px;
 	margin-top: 68px;
 }
 .fixed-header__container {
@@ -250,8 +249,19 @@ div#users-contain table th {
 	padding-right: 0px;
 	left: -319px;
 }
+
+.fixed-header{
+	width: 320px;
+    margin: 0 auto;
+}
+
 /*-----------ГАМБУРГЕР---------*/
 
+.fixed-header-card__button{
+	width: 288px;
+	height: 60px;
+    margin: 0 auto;
+}
 /*-----------------Promo------------------*/
 
 .promo {
@@ -275,7 +285,7 @@ div#users-contain table th {
 	padding-bottom: 4px;
 	padding-top: 4px;
 	border-color: #eec643;
-	margin-left: 16px;
+/*	margin-left: 16px;*/
 	padding-left: 10px;
 	width: 228px;
 	margin-top: 25px;
@@ -303,6 +313,7 @@ div#users-contain table th {
 	margin: 0 auto;
 }
 /*---------------Выравнивание по центру------*/
+
 
 .alignment {
 	margin: 0 auto;
@@ -348,6 +359,7 @@ span,
 	padding: 0;
 	width: 212px;
 	height: 144px;
+	margin-right: 7px;
 }
 .promo__desk-five {
 	transform: rotate(-90deg);
@@ -357,11 +369,11 @@ span,
 .decrease {
 	width: 144px;
 	height: 60px;
-	margin: 22px 0px 0px -69px;
+	margin: 14px 0px 0px -69px;
 }
 .promo__desk-one {
 	padding-top: 12px;
-	padding-left: 16px;
+/*	padding-left: 16px;*/
 	order: 3;
 }
 .promo__card-title {
@@ -375,7 +387,7 @@ span,
 }
 .promo__desk-two {
 	padding-top: 16px;
-	padding-left: 16px;
+/*	padding-left: 16px;*/
 	order: 2;
 }
 .promo__card-guitar {
@@ -393,7 +405,7 @@ span,
 	display: flex;
 	flex-basis: auto;
 	padding-top: 16px;
-	padding-left: 9px;
+/*	padding-left: 9px;*/
 }
 .promo__card-directions {
 	margin: 0;
@@ -438,7 +450,7 @@ span,
 	margin-top: 32px;
 	width: 218px;
 	padding-left: 10px;
-	margin-right: 28px;
+	margin-right: 45px;
 }
 .advan-one-card {
 	background-image: url(../img/advantages_card_img_11.jpg);
@@ -446,7 +458,7 @@ span,
 	width: 288px;
 	height: 144px;
 	margin: 0;
-	margin-left: 31px;
+	margin-left: 14px;
 	margin-top: 16px;
 }
 .advan-two-card {
@@ -455,7 +467,7 @@ span,
 	width: 288px;
 	height: 144px;
 	margin: 0;
-	margin-left: 31px;
+	margin-left: 14px;
 	margin-top: 16px;
 }
 .advan-three-card {
@@ -464,7 +476,7 @@ span,
 	width: 212px;
 	height: 144px;
 	margin: 0;
-	margin-left: 24px;
+	margin-left: 7px;
 	margin-top: 16px;
 }
 .advan-four-card {
@@ -529,7 +541,7 @@ span,
 	width: 218px;
 	padding-left: 10px;
 	margin-top: 32px;
-	margin-right: 43px;
+	margin-right: 60px;
 }
 .activity__block-one-text-desk {
 	display: none;
@@ -713,9 +725,9 @@ span,
 	padding-bottom: 2px;
 	padding-top: 6px;
 	border-color: #eec643;
-	margin-left: 16px;
+	margin-left: 6px;
 	margin-top: 40px;
-	width: 228px;
+	width: 218px;
 	padding-left: 10px;
 }
 .location__item-text-desk {
@@ -723,11 +735,11 @@ span,
 }
 .location__item-text-mob {
 	color: #021a23;
-	margin-left: 25px;
+	margin-left: 15px;
 	margin-top: 22px;
 }
 .location__map {
-	margin-left: 17px;
+/*	margin-left: 17px;*/
 	margin-bottom: 9px;
 }
 .location__wrap {
@@ -736,7 +748,7 @@ span,
 .location__decrease {
 	width: 288px;
 	height: 60px;
-	margin-left: 16px;
+	margin-left: 6px;
 }
 .location__card-directions {
 	margin: 0;
@@ -756,7 +768,24 @@ span,
 /*------------------Location-------КОНЕЦ--------*/
 
 @media (min-width: 540px) {
-	.wrapper {
+	
+}
+@media (min-width: 1200px) {
+	/*----------------fixed-header---------------*/
+	body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.promo,
+	.advantages,
+	.activity,
+	.location,
+	.page-footer {
+		width: 1280px;
+	}
+	/*****------------------------**************/
+.wrapper {
 		background-image: url(../img/bg_main.jpg);
 		background-repeat: no-repeat;
 		/*width: 1280px;*/
@@ -791,23 +820,18 @@ span,
 		margin: 0;
 		margin-bottom: 20px;
 	}
+
+.fixed-header{
+	width: auto;
 }
-@media (min-width: 1200px) {
-	/*----------------fixed-header---------------*/
-	body {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	.promo,
-	.advantages,
-	.activity,
-	.location,
-	.page-footer {
-		width: 1280px;
-	}
+
+
 	/*****------------------------**************/
-	/*****------------------------**************/
+
+
+
+
+
 	.wrapper {
 		background-image: url(../img/bg_main.jpg);
 		background-repeat: no-repeat;
